@@ -13,7 +13,7 @@ CUDA Version = 10.1
 
 Pytorch Version = 1.6.0
 
-detectron2 (only for Faster-RCNN-FPN)
+detectron2 (for Faster-RCNN-FPN)
 
 ## 2. Prepare Dataset
 Download and extract the Pascal VOC dataset.
@@ -26,15 +26,15 @@ For Faster-RCNN-FPN, set the environmental variable in this way: ```export DETEC
 ### 3.1 Reproduce Table.1
 Go into the SSD300 directory, then run the following scripts.
 
-supervised training (VOC 07 labeled, without augmentation):
+supervised training (VOC 07 labeled, without extra augmentation):
 
 ```CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python3 train_ssd.py --save_interval 12000```
 
-self-labeling (VOC 07 labeled + VOC 12 unlabeled, without augmentation):
+self-labeling (VOC 07 labeled + VOC 12 unlabeled, without extra augmentation):
 
 ```CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python3 train_pseudo39.py --resume weights/ssd300_12000.pth --ramp --save_interval 12000```
 
-supervised training (VOC 0712 labeled, without augmentation):
+supervised training (VOC 0712 labeled, without extra augmentation):
 
 ```CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python3 train_ssd0712.py --save_interval 12000```
 
