@@ -1,6 +1,6 @@
-# CrossTeaching-SSOD
+# CrossRectify-SSOD
 ## 0. Introduction
-Official code of "Mitigating the Mutual Error Amplification for Semi-Supervised Object Detection"
+Official code of "CrossRectify: Leveraging Disagreement for Semi-supervised Object Detection"
 
 This repo includes training SSD300 and training Faster-RCNN-FPN on the Pascal VOC benchmark.
 The scripts about training SSD300 are based on ssd.pytorch (https://github.com/amdegroot/ssd.pytorch/).
