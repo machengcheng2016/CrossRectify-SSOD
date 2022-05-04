@@ -137,4 +137,4 @@ If you find this work useful, please consider citing our paper. We provide a Bib
   year = {2022},
 }
 ```
-Feel free to contact [me](machengcheng2016@gmail.com) if you have any questions about our paper or codes.
+Feel free to contact [machengcheng2016@gmail.com] if you have any questions about our paper or codes.
