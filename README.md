@@ -1,23 +1,31 @@
 # CrossRectify-SSOD
 ## 0. Introduction
-Official code of "CrossRectify: Leveraging Disagreement for Semi-supervised Object Detection"
+Official code of ["CrossRectify: Leveraging Disagreement for Semi-supervised Object Detection"](https://arxiv.org/abs/2201.10734).
 
 This repo includes training SSD300 on Pascal VOC, training Faster-RCNN-FPN on Pascal VOC, and training Faster-RCNN-FPN on MS-COCO.
+
 The scripts about training SSD300 are based on [ssd.pytorch](https://github.com/amdegroot/ssd.pytorch/), contained in ```SSD300```.
+
 The scripts about training Faster-RCNN-FPN on Pascal VOC are based on [the official Detectron2 (v0.4) repo](https://github.com/facebookresearch/detectron2/tree/v0.4/), contained in ```detectron2```.
+
 The scripts about training Faster-RCNN-FPN on MS-COCO are based on [the official MMDetection (v2.17.0) repo](https://github.com/open-mmlab/mmdetection/tree/v2.17.0/), contained in ```mmdetection```.
 
 ## 1. Environment
 Python = 3.6.8
+
 CUDA Version = 10.1
+
 Pytorch Version = 1.6.0
+
 detectron2 = 0.4 (training Faster-RCNN-FPN on Pascal VOC)
+
 mmdetection = 2.17.0 (training Faster-RCNN-FPN on MS-COCO)
 
 ## 2. Prepare Dataset
 
 ### Download and extract the Pascal VOC dataset.
 For training SSD300 on Pascal VOC, go into the ```SSD300``` subdirectory and specify the ```VOC_ROOT``` variable in ```data/voc0712.py``` and ```data/voc07_consistency.py``` as ```/path/to/dataset/VOCdevkit/```
+
 For training Faster-RCNN-FPN on Pascal VOC, go into the ```detectron2``` subdirectory and set the environmental variable in this way: ```export DETECTRON2_DATASETS=/path/to/dataset/VOCdevkit/```
 
 ### Download and extract the MS-COCO dataset.
@@ -108,6 +116,8 @@ To eval the trained Faster-RCNN-FPN on the Pascal VOC test set, run the followin
 - ```python3 train_net.py --eval-only --num-gpus 8 --config configs/voc/voc07_voc12.yaml MODEL.WEIGHTS /path/to/trained/detector/ckpt.pth```
 
 
+
+### 3.4 Reproduce Table.4
 Go into the ```mmdetection``` subdirectory, then run the following script.
 
 - CrossRectify (VOC 07 labeled + VOC 12 unlabeled, confidence threshold=0.9):
