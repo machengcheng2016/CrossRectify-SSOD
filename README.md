@@ -109,7 +109,7 @@ To eval the trained SSD300 on the Pascal VOC test set, run the following script:
 Go into the ```detectron2``` subdirectory, then run the following script.
 
 - CrossRectify (VOC 07 labeled + VOC 12 unlabeled, confidence threshold=0.7):
-```python3 train_net.py --resume --num-gpus 8 --config configs/voc/voc07_voc12.yaml MODEL.WEIGHTS output/model_0005999.pth SOLVER.CHECKPOINT_PERIOD 18000```
+```python3 train_net.py --resume --num-gpus 8 --config configs/voc/voc07_voc12.yaml MODEL.WEIGHTS output/model_0005999.pth SOLVER.CHECKPOINT_PERIOD 36000```
 
 
 To eval the trained Faster-RCNN-FPN on the Pascal VOC test set, run the following script:
