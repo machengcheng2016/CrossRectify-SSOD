@@ -130,11 +130,20 @@ To eval the trained Faster-RCNN-FPN on the MS-COCO test set, run the following s
 ## Citation
 If you find this work useful, please consider citing our paper. We provide a BibTeX entry of our paper below:
 ```
-@misc{CrossRectify,
-  title = {CrossRectify: Leveraging Disagreement for Semi-supervised Object Detection},
-  author = {Ma, Chengcheng and Pan, Xingjia and Ye, Qixiang and Tang, Fan and Dong, Weiming and Xu, Changsheng},
-  url = {https://arxiv.org/abs/2201.10734},
-  year = {2022},
+## Citation
+If you find this work useful, please consider citing our paper. We provide a BibTeX entry of our paper below:
+```
+@article{CrossRectify,
+  title={CrossRectify: Leveraging disagreement for semi-supervised object detection},
+  author={Ma, Chengcheng and Pan, Xingjia and Ye, Qixiang and Tang, Fan and Dong, Weiming and Xu, Changsheng},
+  journal={Pattern Recognition},
+  volume={137},
+  pages={109280},
+  year={2023},
+  publisher={Elsevier}
 }
 ```
+```
+
+## Contact
 Feel free to contact [machengcheng2016@gmail.com] if you have any questions about our paper or codes.
